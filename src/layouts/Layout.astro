@@ -1,0 +1,50 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Tim Beeston — Operations Consultant',
+  description = 'I help growing organisations replace spreadsheet chaos with systems that scale.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="border-b border-uigrey/20">
+      <div class="max-w-page mx-auto px-6 py-4 md:py-6 flex items-center justify-between">
+        <a href="/" class="no-underline">
+          <div class="font-serif text-xl font-semibold leading-tight text-nearblack">Tim Beeston<span class="text-oxblood">.</span></div>
+          <div class="font-mono text-xs uppercase tracking-wider text-uigrey">Operations Consultant</div>
+        </a>
+        <nav class="flex items-center gap-5 md:gap-8 text-sm">
+          <a href="/services" class="text-nearblack no-underline hover:text-oxblood">Services</a>
+          <a href="/about" class="text-nearblack no-underline hover:text-oxblood">About</a>
+          <a href="/contact" class="text-nearblack no-underline hover:text-oxblood">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <footer class="border-t border-uigrey/20 mt-16 md:mt-24">
+      <div class="max-w-page mx-auto px-6 py-8 flex items-center justify-between text-sm text-uigrey">
+        <div>© {new Date().getFullYear()} Tim Beeston</div>
+        <div>Based in the UK</div>
+      </div>
+    </footer>
+  </body>
+</html>

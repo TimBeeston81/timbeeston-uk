@@ -1,17 +1,102 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <section class="max-w-page mx-auto px-6 py-16 md:py-24 lg:py-32">
+    <div class="max-w-prose">
+      <h1>
+        Build less.<br />
+        <em class="not-italic text-oxblood">Run better.</em>
+      </h1>
+      <p class="mt-8 text-lg" style="color: rgb(28 28 30 / 0.8);">
+        Most consultants in this space start with the tools. I start with the business. The systems get designed and built around what you actually do, not the other way around.
+      </p>
+      <div class="mt-10">
+        <a href="/contact" class="inline-block bg-oxblood text-offwhite no-underline px-6 py-3 font-medium hover:opacity-90">
+          Book a 30-minute call
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="border-t border-uigrey/20"></div>
+  <section class="max-w-page mx-auto px-6 py-16 md:py-24 lg:py-32">
+    <div class="max-w-prose">
+      <p class="font-mono text-xs uppercase tracking-widest text-uigrey mb-3 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 bg-oxblood shrink-0" aria-hidden="true"></span>who this is for</p>
+      <h2 class="mt-0 mb-8 md:mb-10">You might be reading this because:</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+      <div class="bg-nearblack/5 p-6 md:p-8">
+        <p class="font-mono text-xs text-oxblood mb-4">01</p>
+        <p class="mb-0">You've outgrown the spreadsheet that used to work fine, and now it's a liability rather than a tool.</p>
+      </div>
+      <div class="bg-nearblack/5 p-6 md:p-8">
+        <p class="font-mono text-xs text-oxblood mb-4">02</p>
+        <p class="mb-0">Your team is doing the same manual steps every week that a system should be doing for them.</p>
+      </div>
+      <div class="bg-nearblack/5 p-6 md:p-8">
+        <p class="font-mono text-xs text-oxblood mb-4">03</p>
+        <p class="mb-0">You inherited a tangle of tools from a previous hire and have no idea whether any of it is actually working.</p>
+      </div>
+      <div class="bg-nearblack/5 p-6 md:p-8">
+        <p class="font-mono text-xs text-oxblood mb-4">04</p>
+        <p class="mb-0">You're about to hire more people, and you'd rather fix the process before scaling the problem.</p>
+      </div>
+    </div>
+    <p class="mt-8 text-uigrey text-sm">If any of that lands, we should probably talk.</p>
+  </section>
+
+  <div class="border-t border-uigrey/20"></div>
+  <section class="max-w-page mx-auto px-6 py-16 md:py-24 lg:py-32">
+    <p class="font-mono text-xs uppercase tracking-widest text-uigrey mb-3 flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 bg-oxblood shrink-0" aria-hidden="true"></span>what i do</p>
+    <h2 class="mt-0 mb-8 md:mb-12">What I do</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="bg-nearblack/5 border-t-2 border-oxblood p-6 md:p-8 flex flex-col">
+        <svg width="36" height="28" viewBox="0 0 36 28" fill="none" aria-hidden="true" class="text-oxblood">
+          <rect x="1" y="1" width="34" height="7" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="1" y="10.5" width="34" height="7" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="1" y="20" width="34" height="7" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <h3 class="mt-6 mb-3">Audit your stack.</h3>
+        <p class="text-sm leading-relaxed flex-1">A two-to-four-week review of your current tools, data flows, and processes. I map what you have, find where things break down, and give you a clear picture of what to keep, what to fix, and what to cut.</p>
+        <a href="/services#audit" class="text-sm font-medium mt-8 self-start no-underline hover:underline">Read more →</a>
+      </div>
+
+      <div class="bg-nearblack/5 border-t-2 border-oxblood p-6 md:p-8 flex flex-col">
+        <svg width="52" height="20" viewBox="0 0 52 20" fill="none" aria-hidden="true" class="text-oxblood">
+          <rect x="1" y="5" width="10" height="10" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="12" y1="10" x2="19" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="16" y1="7.5" x2="19" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="16" y1="12.5" x2="19" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <rect x="20" y="5" width="10" height="10" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="31" y1="10" x2="38" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="35" y1="7.5" x2="38" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="35" y1="12.5" x2="38" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <rect x="39" y="5" width="10" height="10" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <h3 class="mt-6 mb-3">Build or rebuild.</h3>
+        <p class="text-sm leading-relaxed flex-1">Design and build a system that fits how your business actually works. Whether you're starting from scratch or replacing something that has outgrown itself, I scope, build, and hand over properly documented.</p>
+        <a href="/services#build" class="text-sm font-medium mt-8 self-start no-underline hover:underline">Read more →</a>
+      </div>
+
+      <div class="bg-nearblack/5 border-t-2 border-oxblood p-6 md:p-8 flex flex-col">
+        <svg width="44" height="28" viewBox="0 0 44 28" fill="none" aria-hidden="true" class="text-oxblood">
+          <rect x="1" y="1" width="10" height="6" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="1" y="11" width="10" height="6" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="1" y="21" width="10" height="6" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="11" y1="4" x2="31" y2="14" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="11" y1="14" x2="31" y2="14" stroke="currentColor" stroke-width="1.5"/>
+          <line x1="11" y1="24" x2="31" y2="14" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="31" y="11" width="12" height="6" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <h3 class="mt-6 mb-3">Rescue an inherited system.</h3>
+        <p class="text-sm leading-relaxed flex-1">You've taken on a setup you didn't design and you're not sure what half of it does. I start with a discovery week to make sense of it, then give you a practical plan for what comes next.</p>
+        <a href="/services#rescue" class="text-sm font-medium mt-8 self-start no-underline hover:underline">Read more →</a>
+      </div>
+
+    </div>
+    <p class="mt-12 text-sm text-uigrey">Not sure which fits? <a href="/services">See all services →</a></p>
+  </section>
+</Layout>
